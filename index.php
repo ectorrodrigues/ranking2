@@ -40,6 +40,10 @@
         display: inline-block !important;
       }
 
+      .col-4{
+        display: inline-block !important;
+      }
+
       form{
         appearance: none !important;
         -webkit-appearance: none !important;
@@ -92,7 +96,7 @@
           </div>
         </div>
 
-        <div class="row justify-content-center py-4">
+        <!--<div class="row justify-content-center py-4">
 
           <div class="col-10 px-5">
             <label for="data">1 lugar:</label><br>
@@ -123,7 +127,7 @@
             <input type="text" name="recebido3" value="" placeholder="Total Recebido"><br>
             <strong> Foto:</strong> <input type="file" name="foto3" value="" class="mt-2">
           </div>
-        </div>
+        </div>-->
 
         <div class="row justify-content-center">
           <div class="col-3 mx-2">
@@ -137,6 +141,10 @@
           <div class="col-3 mx-2">
             <label for="totalrecebido">Meta Incremento:</label><br>
             <textarea name="totalrecebido" rows="8" cols="80" placeholder="Cole aqui os totais recebidos na ordem do Ranking"></textarea>
+          </div>
+          <div class="col-3 mx-2">
+            <label for="porcentagem">Porcentagem:</label><br>
+            <textarea name="porcentagem" rows="8" cols="80" placeholder="Cole aqui as porcentagens na ordem do Ranking"></textarea>
           </div>
         </div>
 

@@ -41,36 +41,50 @@
         cursor:pointer
       }
 
-      .col-1, .col-2, .col-3{
-        padding-top: 535px;
-        display: inline-block;
+      .col-1, .col-2, .col-3, .col-4{
+        padding-top: 350px;
+        display: inline-block !important;
       }
 
       .col-1{
-        width: 38%;
-        margin-left: 5%;
-        color: #146E37;
+        padding-top: 340px;
+      }
+
+
+      .col-1{
+        width: 28%;
+        margin-left: 10%;
+        color: #fff;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 18px;
         vertical-align: text-top;
-        line-height: 40px;
+        line-height: 30px;
       }
 
       .col-2{
-        width: 20%;
+        width: 24%;
         color:#fff;
-        font-size: 17px;
+        font-size: 18px;
         vertical-align: text-top;
-        line-height: 40.3px;
+        line-height: 30px;
         padding-left:10px;
       }
 
       .col-3{
-        width: 28%;
-        color: #146E37;
-        font-size: 28px;
+        width: 22%;
+        color: #fff;
+        font-size: 18px;
         vertical-align: text-top;
-        line-height: 40px;
+        line-height: 30px;
+      }
+
+      .col-4{
+        width: 25%;
+        color: #fff;
+        font-size: 18px;
+        vertical-align: text-top;
+        line-height: 30px;
+
       }
 
       .label{
@@ -87,11 +101,11 @@
 
       .date{
         position: absolute;
-        margin-top: 360px;
-        margin-left: 556px;
+        margin-top: 1150px;
+        margin-left: 65px;
         font-size: 32px;
-        color: #fff;
-        text-align: left;
+        color: #e1b66b;
+        text-align: right;
       }
 
       .btn{
@@ -120,7 +134,7 @@
         margin-right: 5px;
       }
 
-      .col-1 .first{
+      /*.col-1 .first{
         display: block;
         height: 50px;
         line-height: 60px;
@@ -128,7 +142,7 @@
         margin: 10px 0;
         padding: 8px 5px 10px 5px;
         border-radius: 5px;
-      }
+      }*/
 
       .foto {
         display: inline-block;
@@ -188,9 +202,12 @@
     $totalrecebido = $_POST['totalrecebido'];
     $totalrecebido = nl2br($totalrecebido);
 
+    $porcentagem = $_POST['porcentagem'];
+    $porcentagem = nl2br($porcentagem);
+
     $data = $_POST['data'];
 
-    $nome1    = $_POST['nome1'];
+    /*$nome1    = $_POST['nome1'];
     $cargo1   = $_POST['cargo1'];
     $agencia1 = $_POST['agencia1'];
     $receber1 = $_POST['receber1'];
@@ -206,11 +223,11 @@
     $cargo3   = $_POST['cargo3'];
     $agencia3 = $_POST['agencia3'];
     $receber3 = $_POST['receber3'];
-    $recebido3 = $_POST['recebido3'];
+    $recebido3 = $_POST['recebido3'];*/
 
     $_UP['folder']	= 'img/';
 
-    $foto1		= $_FILES['foto1']['name'];
+    /*$foto1		= $_FILES['foto1']['name'];
 		$foto1		= uniqid().'_'.$foto1;
 		move_uploaded_file($_FILES['foto1']['tmp_name'], $_UP['folder'] . $foto1);
 
@@ -220,7 +237,7 @@
 
     $foto3		= $_FILES['foto3']['name'];
 		$foto3		= uniqid().'_'.$foto3;
-		move_uploaded_file($_FILES['foto3']['tmp_name'], $_UP['folder'] . $foto3);
+		move_uploaded_file($_FILES['foto3']['tmp_name'], $_UP['folder'] . $foto3);*/
 
      ?>
 
@@ -258,58 +275,62 @@
 
       <div class="col-1">
         <div class="label opacity-0">.</div><br>
-        <div class="first">
-                  <div class=" foto" style="background-image: url('img/<?= $foto1 ?>');">
+        <!--<div class="first">
+                  <div class=" foto" style="background-image: url('img/ //$foto1 ');">
                   </div>
                   <div class="texto">
-                    <p class="nome"><span class="nometitulo"><?= $nome1 ?></span><br>
-                      <span class="cargo"><?= $cargo1 ?></span><br>
-                      <span class="agencia"><?= $agencia1 ?></span>
+                    <p class="nome"><span class="nometitulo"> //$nome1 </span><br>
+                      <span class="cargo"> //$cargo1 </span><br>
+                      <span class="agencia">// $agencia1 </span>
                     </p>
                   </div>
               </div>
 
               <div class="first">
-                  <div class=" foto" style="background-image: url('img/<?= $foto2 ?>');">
+                  <div class=" foto" style="background-image: url('img/ //$foto2 ');">
                   </div>
                   <div class="texto">
-                    <p class="nome"><span class="nometitulo"><?= $nome2 ?></span><br>
-                      <span class="cargo"><?= $cargo2 ?></span><br>
-                      <span class="agencia"><?= $agencia2 ?></span>
+                    <p class="nome"><span class="nometitulo">//$nome2 </span><br>
+                      <span class="cargo"> //$cargo2 </span><br>
+                      <span class="agencia">//$agencia2 </span>
                     </p>
                   </div>
               </div>
 
               <div class="first">
-                  <div class=" foto" style="background-image: url('img/<?= $foto3 ?>');">
+                  <div class=" foto" style="background-image: url('img/// $foto3 ');">
                   </div>
                   <div class="texto">
-                    <p class="nome"><span class="nometitulo"><?= $nome3 ?></span><br>
-                    <span class="cargo"><?= $cargo3 ?></span><br>
-                    <span class="agencia"><?= $agencia3 ?></span></p>
+                    <p class="nome"><span class="nometitulo">// $nome3 </span><br>
+                    <span class="cargo"> //$cargo3 </span><br>
+                    <span class="agencia">// $agencia3 </span></p>
                   </div>
-              </div>
+              </div>-->
         <?= $cidades ?>
       </div>
 
       <div class="col-2">
-        <div class="label" style="margin-top: 0px !important;">Total a receber</div><br>
-        <div class="receber">
-          <?= $receber1 ?><br>
-          <?= $receber2 ?><br>
-          <?= $receber3 ?><br>
-        </div>
+        <!--<div class="label" style="margin-top: 0px !important;">Incremento Realizado</div><br>-->
+        <!--<div class="receber">
+          //$receber1 ?><br>
+           //$receber2 ?><br>
+          // $receber3 ?><br>
+        </div>-->
         <?= $totalreceber ?>
       </div>
 
       <div class="col-3">
-        <div class="label">Total recebido</div><br>
-        <div class="recebido">
-          <?= $recebido1 ?><br>
-          <?= $recebido2 ?><br>
-          <?= $recebido3 ?><br>
-        </div>
+        <!--<div class="label">Meta Incremento</div><br>-->
+        <!--<div class="recebido">
+           //$recebido1 ?><br>
+           //$recebido2 ?><br>
+         //$recebido3 ?><br>
+        </div>-->
         <?= $totalrecebido ?>
+      </div>
+
+      <div class="col-4">
+          <?= $porcentagem ?>
       </div>
 
     </div>
