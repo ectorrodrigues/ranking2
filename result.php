@@ -332,12 +332,39 @@
         </div>-->
         <?= $totalrecebido ?>
       </div>
-
-      <div class="col-4">
+      <?php $bg_color= ''; ?>
+      <div class="col-4"  style="background-color:<?=$bg_color?>" >
           <?= $porcentagem ?>
       </div>
 
     </div>
+
+
+    <?php
+        $quantidade = '19';
+
+
+          for ($i=0; $i<$quantidade; $i++):
+
+            if ($porcentagem >= 100){
+              $bg_color= "8cc63f";
+
+            }else if ($porcentagem < 100 && $porcentagem >= 50) {
+              $bg_color= "ffff00";
+
+            } else if ($porcentagem < 50 && $porcentagem > 0) {
+              $bg_color= "fbb03b";
+
+            } else if ($porcentagem <= 0) {
+              $bg_color= "ff0000";
+            }
+
+
+          endfor;
+     ?>
+
+
+
 
 
 <!--
