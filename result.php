@@ -52,8 +52,8 @@
 
 
       .col-1{
-        width: 28%;
-        margin-left: 10%;
+        width: 24%;
+        margin-left: 8%;
         color: #fff;
         font-weight: 700;
         font-size: 18px;
@@ -62,28 +62,32 @@
       }
 
       .col-2{
-        width: 24%;
+        width: 15%;
         color:#fff;
         font-size: 18px;
         vertical-align: text-top;
         line-height: 30px;
         padding-left:10px;
+        text-align: right;
       }
 
       .col-3{
-        width: 22%;
+        width: 20%;
         color: #fff;
         font-size: 18px;
         vertical-align: text-top;
         line-height: 30px;
+        text-align: right;
+
       }
 
       .col-4{
-        width: 25%;
+        width: 18%;
         color: #fff;
         font-size: 18px;
         vertical-align: text-top;
         line-height: 30px;
+        text-align: right;
 
       }
 
