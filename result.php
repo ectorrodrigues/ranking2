@@ -52,7 +52,7 @@
 
 
       .col-1{
-        width: 24%;
+        width: 28%;
         margin-left: 8%;
         color: #fff;
         font-weight: 700;
@@ -62,7 +62,7 @@
       }
 
       .col-2{
-        width: 15%;
+        width: 14%;
         color:#fff;
         font-size: 18px;
         vertical-align: text-top;
@@ -82,7 +82,7 @@
       }
 
       .col-4{
-        width: 18%;
+        width: 16%;
         color: #fff;
         font-size: 18px;
         vertical-align: text-top;
@@ -333,11 +333,17 @@
         <?= $totalrecebido ?>
       </div>
       <?php $bg_color= ''; ?>
+
+
       <div class="col-4"  style="background-color:<?=$bg_color?>" >
           <?= $porcentagem ?>
+
+
       </div>
 
     </div>
+
+
 
 
     <?php
@@ -347,23 +353,21 @@
           for ($i=0; $i<$quantidade; $i++):
 
             if ($porcentagem >= 100){
-              $bg_color= "8cc63f";
+              $bg_color= "#8cc63f";
 
             }else if ($porcentagem < 100 && $porcentagem >= 50) {
-              $bg_color= "ffff00";
+              $bg_color= "#ffff00";
 
             } else if ($porcentagem < 50 && $porcentagem > 0) {
-              $bg_color= "fbb03b";
+              $bg_color= "#fbb03b";
 
             } else if ($porcentagem <= 0) {
-              $bg_color= "ff0000";
+              $bg_color= "#ff0000";
             }
 
 
           endfor;
      ?>
-
-
 
 
 
