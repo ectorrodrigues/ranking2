@@ -30,7 +30,7 @@
         font-family: 'Exo 2', sans-serif;
         font-style: italic;
         font-weight: 700;
-        margin-left:100px;
+        width:1100px; height: 1380px;
       }
 
       #canvas{
@@ -41,53 +41,78 @@
         cursor:pointer
       }
 
-      .col-1, .col-2, .col-3, .col-4{
-        padding-top: 350px;
+
+
+
+      .col-1, .col-2, .col-3, .col-4, .col-5, .col-6{
+        padding-top: 345.5px;
+        font-weight: 400;
         display: inline-block !important;
-      }
-
-      .col-1{
-        padding-top: 340px;
-      }
-
-
-      .col-1{
-        width: 28%;
-        margin-left: 8%;
-        color: #fff;
-        font-weight: 700;
-        font-size: 18px;
+        font-size: 13px;
+        color:#fff;
         vertical-align: text-top;
-        line-height: 30px;
+        line-height: 27px;
+        text-align: right;
+      }
+
+
+      .col-1{
+        padding-top: 337px;
+        width: 20%;
+        margin-left: 20.8%;
+        text-align: left;
       }
 
       .col-2{
-        width: 14%;
-        color:#fff;
-        font-size: 18px;
-        vertical-align: text-top;
-        line-height: 30px;
-        padding-left:10px;
-        text-align: right;
+        width: 8%;
       }
 
       .col-3{
-        width: 20%;
-        color: #fff;
-        font-size: 18px;
-        vertical-align: text-top;
-        line-height: 30px;
-        text-align: right;
+        width: 8.3%;
 
       }
 
       .col-4{
+        width: 5%;
+
+      }
+
+      .col-5{
+        width: 9%;
+
+      }
+
+      .col-6{
+        width: 5%;
+
+      }
+
+      .titulo1{
+        width: 30%;
+        padding-left: 4.5%;
+      }
+
+      .titulo2{
         width: 16%;
-        color: #fff;
-        font-size: 18px;
-        vertical-align: text-top;
-        line-height: 30px;
-        text-align: right;
+      }
+
+      .titulo3{
+        width: 16%;
+
+      }
+
+      .titulo4{
+        width: 7%;
+
+      }
+
+      .titulo{
+        width: 16%;
+
+      }
+
+      .titulo{
+        width: 7%;
 
       }
 
@@ -106,14 +131,15 @@
       .date{
         position: absolute;
         margin-top: 1150px;
-        margin-left: 65px;
+        margin-left: 257px;
         font-size: 32px;
         color: #e1b66b;
         text-align: right;
+        font-weight: 400;
       }
 
       .btn{
-        padding: 25px 35px;
+        padding: 25px 30px;
         float: left;
         position: absolute;
         border-radius: 40px;
@@ -127,7 +153,7 @@
         width: 300px;
         text-align: center;
         margin-top:330px;
-        margin-left: 950px;
+        margin-left: 1000px;
       }
 
       .btn:hover{
@@ -190,12 +216,48 @@
         line-height: 75px;
         margin-bottom:13px;
       }
+
+      .verde {
+        background-color: #8cc63f;
+      }
+
+      .amarelo {
+        background-color: #ffff00;
+      }
+
+      .laranja {
+        background-color: #fbb03b;
+      }
+
+      .vermelho {
+        background-color: #ff0000;
+      }
+
     </style>
 
   </head>
   <body>
 
     <?php
+    /*$titulo1 = $_POST['titulo1'];
+    $titulo1 = nl2br($titulo1);
+
+    $titulo2 = $_POST['titulo2'];
+    $titulo2 = nl2br($titulo2);
+
+    $titulo3 = $_POST['titulo3'];
+    $titulo3 = nl2br($titulo3);
+
+    $titulo4 = $_POST['titulo4'];
+    $titulo4 = nl2br($titulo4);
+
+    $titulo5 = $_POST['titulo5'];
+    $titulo5 = nl2br($titulo5);
+
+    $titulo6 = $_POST['titulo6'];
+    $titulo6 = nl2br($titulo6);*/
+
+
 
     $cidades = $_POST['cidades'];
     $cidades = nl2br($cidades);
@@ -208,6 +270,12 @@
 
     $porcentagem = $_POST['porcentagem'];
     $porcentagem = nl2br($porcentagem);
+
+    $coluna5 = $_POST['coluna5'];
+    $coluna5 = nl2br($coluna5);
+
+    $coluna6 = $_POST['coluna6'];
+    $coluna6 = nl2br($coluna6);
 
     $data = $_POST['data'];
 
@@ -271,13 +339,17 @@
 
     <button type="button" name="button" class="btn" onclick="createimg()"><i class="fa fa-arrow-down" aria-hidden="true"></i> Baixar Imagem</button>
 
-    <div id="capture" style="width:700px; height: 1244px;">
+    <div id="capture" style="width:1080px; height: 1244px;">
 
       <div class="date">
         <?= $data ?>
       </div>
 
+
       <div class="col-1">
+        <!--<div class="titulo1">
+          //$titulo1
+        </div>-->
         <div class="label opacity-0">.</div><br>
         <!--<div class="first">
                   <div class=" foto" style="background-image: url('img/ //$foto1 ');">
@@ -313,7 +385,11 @@
         <?= $cidades ?>
       </div>
 
+
       <div class="col-2">
+        <!--<div class="titulo2">
+           //$titulo2
+        </div>-->
         <!--<div class="label" style="margin-top: 0px !important;">Incremento Realizado</div><br>-->
         <!--<div class="receber">
           //$receber1 ?><br>
@@ -323,7 +399,11 @@
         <?= $totalreceber ?>
       </div>
 
+
       <div class="col-3">
+        <!--<div class="titulo3">
+          //$titulo3
+        </div>-->
         <!--<div class="label">Meta Incremento</div><br>-->
         <!--<div class="recebido">
            //$recebido1 ?><br>
@@ -335,8 +415,32 @@
       <?php $bg_color= ''; ?>
 
 
-      <div class="col-4"  style="background-color:<?=$bg_color?>" >
+
+      <div class="col-4" >
+        <!--<div class="titulo4">
+          //$titulo4
+        </div>-->
           <?= $porcentagem ?>
+
+
+      </div>
+
+
+      <div class="col-5" >
+        <!--<div class="titulo5">
+           //$titulo5
+        </div>-->
+          <?= $coluna5?>
+
+
+      </div>
+
+
+      <div class="col-6 cores" >
+        <!--<div class="titulo6">
+           //$titulo6
+        </div>-->
+          <?=$coluna6?>
 
 
       </div>
@@ -346,30 +450,41 @@
 
 
 
-    <?php
-        $quantidade = '19';
+<script type="text/javascript">
 
 
-          for ($i=0; $i<$quantidade; $i++):
+    var quantidade = '19';
 
-            if ($porcentagem >= 100){
-              $bg_color= "#8cc63f";
+      $(document).ready(function(){
 
-            }else if ($porcentagem < 100 && $porcentagem >= 50) {
-              $bg_color= "#ffff00";
+        $('.cores').on('change',function(){
+          var valor = $(this).val();
+            for (var i=0; i<quantidade; i++):
 
-            } else if ($porcentagem < 50 && $porcentagem > 0) {
-              $bg_color= "#fbb03b";
+                if ($coluna6 >= 100){
+                  $(this).addClass("verde").removeClass("cores");
 
-            } else if ($porcentagem <= 0) {
-              $bg_color= "#ff0000";
-            }
-
-
-          endfor;
-     ?>
+                }else if ($coluna6 < 100 && $coluna6 >= 50) {
+                  $(this).addClass("amarelo").removeClass("cores");
 
 
+                } else if ($coluna6 < 50 && $coluna6 > 0) {
+                  $(this).addClass("laranja").removeClass("cores");
+
+
+                } else if ($coluna6 <= 0) {
+                  $(this).addClass("vermelho").removeClass("cores");
+
+                }
+
+              endfor;
+
+        });
+
+      });
+
+
+</script>
 
 <!--
   <div class="btn" onclick="createimg()">Gerar Imagem</div>

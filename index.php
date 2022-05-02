@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <link rel="canonical" href="http://localhost:8888/cashbackranking"/>
-
+    <link rel="stylesheet" href="/css/style.css">
     <style type="text/css">
 
       body{
@@ -59,6 +59,12 @@
         outline: none;
         border-radius: 8px;
         min-height: 300px;
+        padding: 15px;
+      }
+
+      .titulo{
+        width: 300px !important;
+        min-height: 60px;
         padding: 15px;
       }
 
@@ -131,20 +137,41 @@
 
         <div class="row justify-content-center">
           <div class="col-3 mx-2">
-            <label for="cidades">Cidades:</label><br>
-            <textarea name="cidades" rows="8" cols="80" placeholder="Cole aqui as cidades na ordem do Ranking"></textarea>
+            <label for="cidades">COLUNA 1</label><br>
+            <!--<textarea class="titulo" name="titulo1" rows="3" cols="60" placeholder="Cole aqui o título da coluna e subtítulo"></textarea>
+            <br>-->
+            <textarea name="cidades" rows="8" cols="60" placeholder="Cole aqui os itens da primeira coluna na ordem do Ranking"></textarea>
+
           </div>
           <div class="col-3 mx-2">
-            <label for="totalreceber">Incremento Realizado:</label><br>
-            <textarea name="totalreceber" rows="8" cols="80" placeholder="Cole aqui os totais a receber na ordem do Ranking"></textarea>
+            <label for="totalreceber">COLUNA 2</label><br>
+            <!--<textarea class="titulo" name="titulo2" rows="3" cols="60" placeholder="Cole aqui o título da coluna e subtítulo"></textarea>
+            <br>-->
+            <textarea name="totalreceber" rows="8" cols="60" placeholder="Cole aqui os itens da segunda coluna na ordem do Ranking"></textarea>
           </div>
           <div class="col-3 mx-2">
-            <label for="totalrecebido">Meta Incremento:</label><br>
-            <textarea name="totalrecebido" rows="8" cols="80" placeholder="Cole aqui os totais recebidos na ordem do Ranking"></textarea>
+            <label for="totalrecebido">COLUNA 3</label><br>
+            <!--<textarea class="titulo" name="titulo3" rows="3" cols="60" placeholder="Cole aqui o título da coluna e subtítulo"></textarea>
+            <br>-->
+            <textarea name="totalrecebido" rows="8" cols="60" placeholder="Cole aqui os itens da terceira coluna na ordem do Ranking"></textarea>
           </div>
           <div class="col-3 mx-2">
-            <label for="porcentagem">Porcentagem:</label><br>
-            <textarea name="porcentagem" rows="8" cols="80" placeholder="Cole aqui as porcentagens na ordem do Ranking"></textarea>
+            <label for="porcentagem">COLUNA 4</label><br>
+            <!--<textarea class="titulo" name="titulo4" rows="3" cols="60" placeholder="Cole aqui o título da coluna e subtítulo"></textarea>
+            <br>-->
+            <textarea name="porcentagem" rows="8" cols="60" placeholder="Cole aqui os itens da quarta coluna na ordem do Ranking"></textarea>
+          </div>
+          <div class="col-3 mx-2">
+            <label for="coluna5">COLUNA 5</label><br>
+          <!--  <textarea class="titulo" name="titulo5" rows="3" cols="60" placeholder="Cole aqui o título da coluna e subtítulo"></textarea>
+            <br>-->
+            <textarea name="coluna5" rows="8" cols="60" placeholder="Cole aqui os itens da quinta coluna na ordem do Ranking"></textarea>
+          </div>
+          <div class="col-3 mx-2">
+            <label for="coluna6">COLUNA 6</label><br>
+            <!--<textarea class="titulo" name="titulo6" rows="3" cols="60" placeholder="Cole aqui o título da coluna e subtítulo"></textarea>
+            <br>-->
+            <textarea name="coluna6" rows="8" cols="60" placeholder="Cole aqui os itens da sexta coluna na ordem do Ranking"></textarea>
           </div>
         </div>
 
