@@ -26,15 +26,15 @@
         background-image: url('inc/bg.jpg');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         font-family: 'Exo 2', sans-serif;
         font-style: italic;
         font-weight: 700;
-        width:1100px; height: 1380px;
+        width:700px; height: 1244px;
       }
 
       #canvas{
-        margin-left:100px;
+        margin-left: 200px;
       }
 
       .btn{
@@ -58,32 +58,32 @@
 
       .col-1{
         padding-top: 337px;
-        width: 20%;
-        margin-left: 20.8%;
+        width: 33%;
+        margin-left: 5%;
         text-align: left;
       }
 
       .col-2{
-        width: 8%;
+        width: 10.5%;
       }
 
       .col-3{
-        width: 8.3%;
+        width: 11.5%;
 
       }
 
       .col-4{
-        width: 5%;
+        width: 8%;
 
       }
 
       .col-5{
-        width: 9%;
+        width: 15%;
 
       }
 
       .col-6{
-        width: 4%;
+        width: 6%;
         margin-left: 20px;
         text-align: center;
       }
@@ -295,7 +295,7 @@
 
     <button type="button" name="button" class="btn" onclick="createimg()"><i class="fa fa-arrow-down" aria-hidden="true"></i> Baixar Imagem</button>
 
-    <div id="capture" style="width:1080px; height: 1244px;">
+    <div id="capture" style="">
 
       <div class="date">
         <?= $data ?>
@@ -337,7 +337,7 @@
            $arrlength = count($exploded);
            for($x = 0; $x < $arrlength; $x++) {
              echo $exploded[$x].'<br>';
-           }
+            }
            */
 
             foreach ($exploded as $exploded_val) {
