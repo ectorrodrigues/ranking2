@@ -83,8 +83,9 @@
       }
 
       .col-6{
-        width: 5%;
-
+        width: 4%;
+        margin-left: 20px;
+        text-align: center;
       }
 
       .titulo1{
@@ -217,20 +218,26 @@
         margin-bottom:13px;
       }
 
+      .cores div{
+        padding: 0 10px 0 10px;
+        font-weight: bold;
+        background-blend-mode: multiply;
+      }
+
       .verde {
-        background-color: #8cc63f;
+        background-color: #24a224;
       }
 
       .amarelo {
-        background-color: #ffff00;
+        background-color: #90a224;
       }
 
       .laranja {
-        background-color: #fbb03b;
+        background-color: #8c6e31;
       }
 
       .vermelho {
-        background-color: #ff0000;
+        background-color: #902824;
       }
 
     </style>
@@ -239,25 +246,6 @@
   <body>
 
     <?php
-    /*$titulo1 = $_POST['titulo1'];
-    $titulo1 = nl2br($titulo1);
-
-    $titulo2 = $_POST['titulo2'];
-    $titulo2 = nl2br($titulo2);
-
-    $titulo3 = $_POST['titulo3'];
-    $titulo3 = nl2br($titulo3);
-
-    $titulo4 = $_POST['titulo4'];
-    $titulo4 = nl2br($titulo4);
-
-    $titulo5 = $_POST['titulo5'];
-    $titulo5 = nl2br($titulo5);
-
-    $titulo6 = $_POST['titulo6'];
-    $titulo6 = nl2br($titulo6);*/
-
-
 
     $cidades = $_POST['cidades'];
     $cidades = nl2br($cidades);
@@ -278,38 +266,6 @@
     $coluna6 = nl2br($coluna6);
 
     $data = $_POST['data'];
-
-    /*$nome1    = $_POST['nome1'];
-    $cargo1   = $_POST['cargo1'];
-    $agencia1 = $_POST['agencia1'];
-    $receber1 = $_POST['receber1'];
-    $recebido1 = $_POST['recebido1'];
-
-    $nome2    = $_POST['nome2'];
-    $cargo2   = $_POST['cargo2'];
-    $agencia2 = $_POST['agencia2'];
-    $receber2 = $_POST['receber2'];
-    $recebido2 = $_POST['recebido2'];
-
-    $nome3    = $_POST['nome3'];
-    $cargo3   = $_POST['cargo3'];
-    $agencia3 = $_POST['agencia3'];
-    $receber3 = $_POST['receber3'];
-    $recebido3 = $_POST['recebido3'];*/
-
-    $_UP['folder']	= 'img/';
-
-    /*$foto1		= $_FILES['foto1']['name'];
-		$foto1		= uniqid().'_'.$foto1;
-		move_uploaded_file($_FILES['foto1']['tmp_name'], $_UP['folder'] . $foto1);
-
-    $foto2		= $_FILES['foto2']['name'];
-		$foto2		= uniqid().'_'.$foto2;
-		move_uploaded_file($_FILES['foto2']['tmp_name'], $_UP['folder'] . $foto2);
-
-    $foto3		= $_FILES['foto3']['name'];
-		$foto3		= uniqid().'_'.$foto3;
-		move_uploaded_file($_FILES['foto3']['tmp_name'], $_UP['folder'] . $foto3);*/
 
      ?>
 
@@ -347,149 +303,63 @@
 
 
       <div class="col-1">
-        <!--<div class="titulo1">
-          //$titulo1
-        </div>-->
         <div class="label opacity-0">.</div><br>
-        <!--<div class="first">
-                  <div class=" foto" style="background-image: url('img/ //$foto1 ');">
-                  </div>
-                  <div class="texto">
-                    <p class="nome"><span class="nometitulo"> //$nome1 </span><br>
-                      <span class="cargo"> //$cargo1 </span><br>
-                      <span class="agencia">// $agencia1 </span>
-                    </p>
-                  </div>
-              </div>
-
-              <div class="first">
-                  <div class=" foto" style="background-image: url('img/ //$foto2 ');">
-                  </div>
-                  <div class="texto">
-                    <p class="nome"><span class="nometitulo">//$nome2 </span><br>
-                      <span class="cargo"> //$cargo2 </span><br>
-                      <span class="agencia">//$agencia2 </span>
-                    </p>
-                  </div>
-              </div>
-
-              <div class="first">
-                  <div class=" foto" style="background-image: url('img/// $foto3 ');">
-                  </div>
-                  <div class="texto">
-                    <p class="nome"><span class="nometitulo">// $nome3 </span><br>
-                    <span class="cargo"> //$cargo3 </span><br>
-                    <span class="agencia">// $agencia3 </span></p>
-                  </div>
-              </div>-->
         <?= $cidades ?>
       </div>
 
 
       <div class="col-2">
-        <!--<div class="titulo2">
-           //$titulo2
-        </div>-->
-        <!--<div class="label" style="margin-top: 0px !important;">Incremento Realizado</div><br>-->
-        <!--<div class="receber">
-          //$receber1 ?><br>
-           //$receber2 ?><br>
-          // $receber3 ?><br>
-        </div>-->
         <?= $totalreceber ?>
       </div>
 
 
       <div class="col-3">
-        <!--<div class="titulo3">
-          //$titulo3
-        </div>-->
-        <!--<div class="label">Meta Incremento</div><br>-->
-        <!--<div class="recebido">
-           //$recebido1 ?><br>
-           //$recebido2 ?><br>
-         //$recebido3 ?><br>
-        </div>-->
         <?= $totalrecebido ?>
       </div>
-      <?php $bg_color= ''; ?>
-
 
 
       <div class="col-4" >
-        <!--<div class="titulo4">
-          //$titulo4
-        </div>-->
           <?= $porcentagem ?>
-
-
       </div>
 
 
       <div class="col-5" >
-        <!--<div class="titulo5">
-           //$titulo5
-        </div>-->
           <?= $coluna5?>
-
-
       </div>
 
 
       <div class="col-6 cores" >
-        <!--<div class="titulo6">
-           //$titulo6
-        </div>-->
-          <?=$coluna6?>
+          <?php
+           $exploded = explode("\n",$coluna6);
 
+           /* SORT
+           rsort($exploded);
+           $arrlength = count($exploded);
+           for($x = 0; $x < $arrlength; $x++) {
+             echo $exploded[$x].'<br>';
+           }
+           */
 
+            foreach ($exploded as $exploded_val) {
+
+              if ($exploded_val > 99){
+                echo '<div class="verde">'.$exploded_val.'</div>';
+              } else if($exploded_val > 49 AND $exploded_val < 100){
+                echo '<div class="amarelo">'.$exploded_val.'</div>';
+              } else if($exploded_val > -1 AND $exploded_val < 50){
+                echo '<div class="laranja">'.$exploded_val.'</div>';
+              } else if($exploded_val < 0){
+                echo '<div class="vermelho">'.$exploded_val.'</div>';
+              }
+
+            }
+
+          ?>
       </div>
 
     </div>
 
 
-
-
-<script type="text/javascript">
-
-
-    var quantidade = '19';
-
-      $(document).ready(function(){
-
-        $('.cores').on('change',function(){
-          var valor = $(this).val();
-            for (var i=0; i<quantidade; i++):
-
-                if ($coluna6 >= 100){
-                  $(this).addClass("verde").removeClass("cores");
-
-                }else if ($coluna6 < 100 && $coluna6 >= 50) {
-                  $(this).addClass("amarelo").removeClass("cores");
-
-
-                } else if ($coluna6 < 50 && $coluna6 > 0) {
-                  $(this).addClass("laranja").removeClass("cores");
-
-
-                } else if ($coluna6 <= 0) {
-                  $(this).addClass("vermelho").removeClass("cores");
-
-                }
-
-              endfor;
-
-        });
-
-      });
-
-
-</script>
-
-<!--
-  <div class="btn" onclick="createimg()">Gerar Imagem</div>
-  </div>
--->
 
 
   </body>
