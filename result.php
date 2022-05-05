@@ -45,7 +45,7 @@
 
 
       .col-1, .col-2, .col-3, .col-4, .col-5, .col-6{
-        padding-top: 345.5px;
+        padding-top: 335.5px;
         font-weight: 400;
         display: inline-block !important;
         font-size: 13px;
@@ -57,7 +57,7 @@
 
 
       .col-1{
-        padding-top: 337px;
+        padding-top: 327px;
         width: 20%;
         margin-left: 20.8%;
         text-align: left;
@@ -88,33 +88,14 @@
         text-align: center;
       }
 
-      .titulo1{
-        width: 30%;
-        padding-left: 4.5%;
-      }
-
-      .titulo2{
-        width: 16%;
-      }
-
-      .titulo3{
-        width: 16%;
-
-      }
-
-      .titulo4{
-        width: 7%;
-
-      }
-
-      .titulo{
-        width: 16%;
-
-      }
-
-      .titulo{
-        width: 7%;
-
+      .regional{
+        position: absolute;
+        margin-top: 220px;
+        margin-left: 325px;
+        font-size: 32px;
+        color: #fff;
+        text-align: right;
+        font-weight: 400;
       }
 
       .label{
@@ -265,6 +246,9 @@
     $coluna6 = $_POST['coluna6'];
     $coluna6 = nl2br($coluna6);
 
+    $regional = $_POST['regional'];
+    $regional = nl2br($regional);
+
     $data = $_POST['data'];
 
      ?>
@@ -296,6 +280,10 @@
     <button type="button" name="button" class="btn" onclick="createimg()"><i class="fa fa-arrow-down" aria-hidden="true"></i> Baixar Imagem</button>
 
     <div id="capture" style="width:1080px; height: 1244px;">
+
+      <div class="regional">
+        <?= $regional ?>
+      </div>
 
       <div class="date">
         <?= $data ?>

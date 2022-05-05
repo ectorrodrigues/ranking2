@@ -96,9 +96,13 @@
       <form class="col-12" action="result.php" method="post" enctype="multipart/form-data">
 
         <div class="row justify-content-center py-4">
-          <div class="col-10 px-5">
+          <div class="col-5 px-5">
             <label for="data">Data:</label><br>
             <input type="text" name="data" value="" placeholder="Digite a data do Ranking">
+          </div>
+          <div class="col-5 px-5">
+            <label for="regional">Regional:</label><br>
+            <input type="text" name="regional" value="" placeholder="Ex: Regional 1">
           </div>
         </div>
 
@@ -169,8 +173,6 @@
           </div>
           <div class="col-3 mx-2">
             <label for="coluna6">COLUNA 6</label><br>
-            <!--<textarea class="titulo" name="titulo6" rows="3" cols="60" placeholder="Cole aqui o título da coluna e subtítulo"></textarea>
-            <br>-->
             <textarea name="coluna6" rows="8" cols="60" placeholder="Cole aqui os itens da sexta coluna na ordem do Ranking"></textarea>
           </div>
         </div>
