@@ -58,17 +58,17 @@
 
       .col-1{
         padding-top: 327px;
-        width: 20%;
-        margin-left: 20.8%;
+        width: 18.5%;
+        margin-left: 20.5%;
         text-align: left;
       }
 
       .col-2{
-        width: 8%;
+        width: 9%;
       }
 
       .col-3{
-        width: 8.3%;
+        width: 9%;
 
       }
 
@@ -112,9 +112,9 @@
 
       .date{
         position: absolute;
-        margin-top: 1150px;
+        margin-top: 1155px;
         margin-left: 257px;
-        font-size: 32px;
+        font-size: 26px;
         color: #e1b66b;
         text-align: right;
         font-weight: 400;
