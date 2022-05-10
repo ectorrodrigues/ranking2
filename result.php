@@ -64,16 +64,16 @@
       }
 
       .col-2{
-        width: 9%;
+        width: 9.3%;
       }
 
       .col-3{
-        width: 9%;
+        width: 9.3%;
 
       }
 
       .col-4{
-        width: 5%;
+        width: 4.5%;
 
       }
 
@@ -84,7 +84,7 @@
 
       .col-6{
         width: 4%;
-        margin-left: 20px;
+        margin-left: 15px;
         text-align: center;
       }
 
