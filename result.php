@@ -30,7 +30,7 @@
         font-family: 'Exo 2', sans-serif;
         font-style: italic;
         font-weight: 700;
-        width:1100px; height: 1380px;
+        width:700px; height: 1244px;
       }
 
       #canvas{
@@ -45,7 +45,7 @@
 
 
       .col-1, .col-2, .col-3, .col-4, .col-5, .col-6{
-        padding-top: 335.5px;
+        padding-top: 340px;
         font-weight: 400;
         display: inline-block !important;
         font-size: 13px;
@@ -57,41 +57,41 @@
 
 
       .col-1{
-        padding-top: 327px;
-        width: 18.5%;
-        margin-left: 20.5%;
+        padding-top: 331px;
+        width: 27%;
+        margin-left: 5%;
         text-align: left;
       }
 
       .col-2{
-        width: 9.3%;
+        width: 14.5%;
       }
 
       .col-3{
-        width: 9.3%;
+        width: 14%;
 
       }
 
       .col-4{
-        width: 4.5%;
+        width: 8%;
 
       }
 
       .col-5{
-        width: 9%;
+        width: 15%;
 
       }
 
       .col-6{
-        width: 4%;
-        margin-left: 15px;
+        width: 7%;
+        margin-left: 10px;
         text-align: center;
       }
 
       .regional{
         position: absolute;
         margin-top: 220px;
-        margin-left: 325px;
+        margin-left: 135px;
         font-size: 32px;
         color: #fff;
         text-align: right;
@@ -113,7 +113,7 @@
       .date{
         position: absolute;
         margin-top: 1155px;
-        margin-left: 257px;
+        margin-left: 64px;
         font-size: 26px;
         color: #e1b66b;
         text-align: right;
@@ -194,9 +194,10 @@
         font-size: 17px;
         margin-bottom:13px;
       }
+
       .recebido{
         line-height: 75px;
-        margin-bottom:13px;
+        margin-bottom: 13px;
       }
 
       .cores div{
@@ -279,7 +280,7 @@
 
     <button type="button" name="button" class="btn" onclick="createimg()"><i class="fa fa-arrow-down" aria-hidden="true"></i> Baixar Imagem</button>
 
-    <div id="capture" style="width:1080px; height: 1244px;">
+    <div id="capture">
 
       <div class="regional">
         <?= $regional ?>
